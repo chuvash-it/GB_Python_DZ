@@ -9,6 +9,4 @@
 n + nn + nnn = 369
 '''
 n = int(input('Введите целое число n: '))
-print(f'n + nn + nn = ', n,(2 * n),(3 * n))
-
-#print(f'n + nn + nn = {n + (2 * n) + (3 * n)}')
+print('n + nn + nn = ', f'{n}{2 * n}{3 * n}')
