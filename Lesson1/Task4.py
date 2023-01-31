@@ -21,9 +21,11 @@
 revenue = float(input('Введите выручку фирмы: '))
 costs = float(input('Введите издержки фирмы: '))
 profit = round(revenue - costs, 2)
-if (profit > 0):
+if profit > 0:
     print(f'Финансовый результат - прибыль. Ее величина: {profit}')
     print('Рентабельность выручки = ', round(costs / revenue, 2))
     number_of_employees = int(input('Введите численность сотрудников фирмы: '))
     print('Прибыль фирмы в расчете на одного сотрудника = ', round(costs / number_of_employees, 2))
-else: print(f'Финансовый результат - убыток. Его величина: {profit}')
+elif profit == 0:
+    print(f'Финансовый результат нулевой')
+else: print(f'Финансовый результат - убыток. \nЕго величина: {profit}')
